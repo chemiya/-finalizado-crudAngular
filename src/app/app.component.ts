@@ -22,7 +22,7 @@ export class AppComponent {
 
   addEmployee():void{
     this.employees.push(this.model);
-    this.msg="campo agregado";
+    this.msg="campo agregado";//pongo mensaje en la alerta
   }
 
 
