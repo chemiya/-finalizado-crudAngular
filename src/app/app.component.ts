@@ -27,7 +27,7 @@ export class AppComponent {
 
 
   editEmployee(i:number):void{
-    this.hideUpdate=false;
+    this.hideUpdate=false;//muestro esa parte y la pongo datos
     this.model2.name=this.employees[i].name;
     this.model2.position=this.employees[i].position;
     this.model2.email=this.employees[i].email;
@@ -38,7 +38,7 @@ export class AppComponent {
 
   deleteEmployee(i:number):void{
     let employee=this.employees[i];
-    var answer=confirm("estas seguro de que quieres eliminar a "+employee.name+"?");
+    var answer=confirm("estas seguro de que quieres eliminar a "+employee.name+"?");//confirmacion
     if(answer){
       this.employees.splice(i,1);
     }
